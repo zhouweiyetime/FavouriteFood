@@ -14,6 +14,8 @@
 		A89E50DF260E0FCF0005D016 /* FavouriteFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E50DE260E0FCF0005D016 /* FavouriteFoodTests.swift */; };
 		A89E50EA260E0FCF0005D016 /* FavouriteFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E50E9260E0FCF0005D016 /* FavouriteFoodUITests.swift */; };
 		A89E50FB260E10BC0005D016 /* FavouriteFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E50FA260E10BC0005D016 /* FavouriteFood.swift */; };
+		A8AC42FB2614B0E500486962 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC42FA2614B0E500486962 /* DetailView.swift */; };
+		A8AC43002614B36100486962 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC42FF2614B36100486962 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A89E50E9260E0FCF0005D016 /* FavouriteFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFoodUITests.swift; sourceTree = "<group>"; };
 		A89E50EB260E0FCF0005D016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A89E50FA260E10BC0005D016 /* FavouriteFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFood.swift; sourceTree = "<group>"; };
+		A8AC42FA2614B0E500486962 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A8AC42FF2614B36100486962 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				A89E50CC260E0FCE0005D016 /* FavouriteFoodApp.swift */,
 				A89E50CE260E0FCE0005D016 /* ContentView.swift */,
+				A8AC42FF2614B36100486962 /* ViewModel.swift */,
 				A89E50FA260E10BC0005D016 /* FavouriteFood.swift */,
+				A8AC42FA2614B0E500486962 /* DetailView.swift */,
 				A89E50D0260E0FCE0005D016 /* Assets.xcassets */,
 				A89E50D5260E0FCE0005D016 /* Info.plist */,
 				A89E50D2260E0FCE0005D016 /* Preview Content */,
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8AC43002614B36100486962 /* ViewModel.swift in Sources */,
 				A89E50FB260E10BC0005D016 /* FavouriteFood.swift in Sources */,
+				A8AC42FB2614B0E500486962 /* DetailView.swift in Sources */,
 				A89E50CF260E0FCE0005D016 /* ContentView.swift in Sources */,
 				A89E50CD260E0FCE0005D016 /* FavouriteFoodApp.swift in Sources */,
 			);

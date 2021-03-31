@@ -8,30 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var foods: ViewModel
     var body: some View {
-        VStack(alignment: .leading) {
-            Image("chips")
-                .resizable()
-                .scaledToFit()
-        Text(food.FoodName)
-            .font(.largeTitle)
-            .fontWeight(.bold)
-            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-            .scaledToFit()
-        Text(food.FoodDescription)
-                .font(.body)
-                .fontWeight(.thin)
-                .scaledToFit()
-            Text(food.FoodStory)
-                .padding([.top, .bottom, .trailing])
-               
-                
+        NavigationView {
+            MasterView(foods: foods)
+                .navigationBarTitle(Text("Food"))
         }
     }
 }
 
+struct MasterView: View {
+    var foods: ViewModel
+    var body: some View {
+        List{
+            ForEach(foods.model, id: \.FoodName) {food in
+                NavigationLink(
+                    destination: DetailView(food: food),
+                    label: {
+                            Text(food.FoodName)
+                               })
+            }
+        }
+    }
+}
+        
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        return ContentView(foods: ViewModel())
     }
 }
