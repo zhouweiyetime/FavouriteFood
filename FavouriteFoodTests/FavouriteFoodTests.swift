@@ -20,37 +20,57 @@ class FavouriteFoodTests: XCTestCase {
 
     func testFoodName() throws {
     //Use XCTAssertEqual to test whether the value of FoodName is equal to the assigned value.
-        let FoodName = "Chips"
-        let food = Food(FoodName: FoodName, FoodDescription: "Chips with some sauce", FoodStory: "When I tried Chips for the first time, it became one of my favourite foods")
+        let FoodName = "chips"
+        let food = Food(FoodImage: chipsImage, FoodName: "chips", FoodDescription: chipsDescription, FoodStory: chipsStory, FoodRecipe: chipsRecipe, FoodIngredient: chipsIngredient)
         XCTAssertEqual(food.FoodName, FoodName)
     }
     
     func testFoodDescription() throws {
     //Use XCTAssertEqual to test whether the value of FoodDescription is equal to the assigned value.
-        let FoodDescription = "Chips with some sauce"
-        let food = Food(FoodName: "chips", FoodDescription: FoodDescription, FoodStory: "When I tried Chips for the first time, it became one of my favourite foods")
+        let FoodDescription = cakeDescription
+        let food = Food(FoodImage: cakeImage, FoodName: "cake", FoodDescription: cakeDescription, FoodStory: cakeStory, FoodRecipe: cakeRecipe, FoodIngredient: cakeIngredient)
         XCTAssertEqual(food.FoodDescription, FoodDescription)
     }
     
     func testFoodStory() throws {
     //Use XCTAssertEqual to test whether the value of FoodStory is equal to the assigned value.
-        let FoodStory = "When I tried Chips for the first time, it became one of my favourite foods"
-        let food = Food(FoodName: "chips", FoodDescription: "Chips with some sauce", FoodStory: FoodStory)
+        let FoodStory = steakStory
+        let food = Food(FoodImage: steakImage, FoodName: "steak", FoodDescription: steakDescription, FoodStory: steakStory, FoodRecipe: steakRecipe, FoodIngredient: steakIngredient)
         XCTAssertEqual(food.FoodStory, FoodStory)
     }
     
+    func testFoodRecipe() throws {
+    //Use XCTAssertEqual to test whether the value of FoodRecipe is equal to the assigned value.
+        let FoodRecipe = chickenNuggetsRecipe
+        let food = Food(FoodImage: chickenNuggetsImage, FoodName: "chickenNuggets", FoodDescription: chickenNuggetsDescription, FoodStory: chickenNuggetsStory, FoodRecipe: chickenNuggetsRecipe, FoodIngredient: chickenNuggetsIngredient)
+        XCTAssertEqual(food.FoodRecipe, FoodRecipe)
+    }
+    
+    func testFoodIngredient() throws {
+    //Use XCTAssertEqual to test whether the value of FoodIngredient is equal to the assigned value.
+        let FoodIngredient = hambergerIngredient
+        let food = Food(FoodImage: hambergerImage, FoodName: "hamberger", FoodDescription: hambergerDescription, FoodStory: hambergerStory, FoodRecipe: hambergerRecipe, FoodIngredient: hambergerIngredient)
+        XCTAssertEqual(food.FoodIngredient, FoodIngredient)
+    }
+    
+    
     func testFood() throws {
     //Use XCTAssertEqual to test whether the value of Food is equal to the assigned value.
-        let FoodName = "Chips"
-        let FoodDescription = "Chips with some sauce"
-        let FoodStory = "When I tried Chips for the first time, it became one of my favourite foods"
-        let food = Food(FoodName: FoodName, FoodDescription: FoodDescription, FoodStory: FoodStory)
+        let FoodImage = hambergerImage
+        let FoodName = "hamberger"
+        let FoodDescription = hambergerDescription
+        let FoodStory = hambergerStory
+        let FoodRecipe = hambergerRecipe
+        let FoodIngredient = hambergerIngredient
+        let food = Food(FoodImage: FoodImage, FoodName: FoodName, FoodDescription: FoodDescription, FoodStory: FoodStory, FoodRecipe: FoodRecipe, FoodIngredient: FoodIngredient)
+        XCTAssertEqual(food.FoodImage, FoodImage)
         XCTAssert(food.FoodName == FoodName)
         XCTAssertEqual(food.FoodName, FoodName)
         XCTAssertEqual(food.FoodDescription, FoodDescription)
         XCTAssertEqual(food.FoodStory, FoodStory)
+        XCTAssertEqual(food.FoodRecipe, FoodRecipe)
+        XCTAssertEqual(food.FoodIngredient, FoodIngredient)
     }
-    
 
   
 
