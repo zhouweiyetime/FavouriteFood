@@ -16,6 +16,7 @@
 		A89E50FB260E10BC0005D016 /* FavouriteFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E50FA260E10BC0005D016 /* FavouriteFood.swift */; };
 		A8AC42FB2614B0E500486962 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC42FA2614B0E500486962 /* DetailView.swift */; };
 		A8AC43002614B36100486962 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC42FF2614B36100486962 /* ViewModel.swift */; };
+		A8E6CB7A261990D2001E9AE9 /* FoodText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E6CB79261990D2001E9AE9 /* FoodText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A89E50FA260E10BC0005D016 /* FavouriteFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFood.swift; sourceTree = "<group>"; };
 		A8AC42FA2614B0E500486962 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A8AC42FF2614B36100486962 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A8E6CB79261990D2001E9AE9 /* FoodText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				A89E50CC260E0FCE0005D016 /* FavouriteFoodApp.swift */,
 				A89E50CE260E0FCE0005D016 /* ContentView.swift */,
+				A8E6CB79261990D2001E9AE9 /* FoodText.swift */,
 				A8AC42FF2614B36100486962 /* ViewModel.swift */,
 				A89E50FA260E10BC0005D016 /* FavouriteFood.swift */,
 				A8AC42FA2614B0E500486962 /* DetailView.swift */,
@@ -270,6 +273,7 @@
 			files = (
 				A8AC43002614B36100486962 /* ViewModel.swift in Sources */,
 				A89E50FB260E10BC0005D016 /* FavouriteFood.swift in Sources */,
+				A8E6CB7A261990D2001E9AE9 /* FoodText.swift in Sources */,
 				A8AC42FB2614B0E500486962 /* DetailView.swift in Sources */,
 				A89E50CF260E0FCE0005D016 /* ContentView.swift in Sources */,
 				A89E50CD260E0FCE0005D016 /* FavouriteFoodApp.swift in Sources */,

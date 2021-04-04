@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             MasterView(foods: foods)
-                .navigationBarTitle(Text("Food"))
+                .navigationBarTitle(Text("Favourite Food"))
         }
     }
 }
@@ -23,7 +23,8 @@ struct MasterView: View {
         List{
             ForEach(foods.model, id: \.FoodName) {food in
                 NavigationLink(
-                    destination: DetailView(food: food),
+                    destination: DetailView(food: food)
+                        .frame(width: UIScreen.main.bounds.width - 30),
                     label: {
                             Text(food.FoodName)
                                })
