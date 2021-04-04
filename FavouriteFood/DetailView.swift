@@ -14,8 +14,3 @@ struct DetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView(food:Food(FoodName: "Chips", FoodDescription: "Chips with some sauce.", FoodStory: "When I tried Chips for the first time, it became one of my favourite foods"))
-        }
-}

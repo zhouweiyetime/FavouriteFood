@@ -10,7 +10,15 @@ import SwiftUI
 @main
 struct FavouriteFoodApp: App {
     var foodViewModel: ViewModel {
-        let foods = [Food(FoodName: "Chips", FoodDescription: "Chips with some sauce.", FoodStory: "When I tried Chips for the first time, it became one of my favourite foods")]
+        let foods = [Food(FoodImage: chipsImage, FoodName: "chips", FoodDescription: chipsDescription, FoodStory: chipsStory, FoodRecipe: chipsRecipe, FoodIngredient: chipsIngredient),
+                     
+                    Food(FoodImage: cakeImage, FoodName: "cake", FoodDescription: cakeDescription, FoodStory: cakeStory, FoodRecipe: cakeRecipe, FoodIngredient: cakeIngredient),
+                    
+                    Food(FoodImage: steakImage, FoodName: "steak", FoodDescription: steakDescription, FoodStory: steakStory, FoodRecipe: steakRecipe, FoodIngredient: steakIngredient),
+                    
+                    Food(FoodImage: chickenNuggetsImage, FoodName: "chickenNuggets", FoodDescription: chickenNuggetsDescription, FoodStory: chickenNuggetsStory, FoodRecipe: chickenNuggetsRecipe, FoodIngredient: chickenNuggetsIngredient),
+                    
+                     Food(FoodImage: hambergerImage, FoodName: "hamberger", FoodDescription: hambergerDescription, FoodStory: hambergerStory, FoodRecipe: hambergerRecipe, FoodIngredient: hambergerIngredient)]
         let viewModel = ViewModel()
         viewModel.model = foods
         return viewModel
