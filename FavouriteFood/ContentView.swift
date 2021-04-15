@@ -8,17 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var foods: ViewModel
-    var body: some View {
+    @ObservedObject var foods: ViewModel
+     var body: some View {
         NavigationView {
             MasterView(foods: foods)
                 .navigationBarTitle(Text("Favourite Food"))
+                .navigationBarItems(leading:
+                    EditButton(),trailing:
+                        Button(action: {
+                            withAnimation {
+                            foods.addElement()
+                            }
+                        }) {
+                            Image(systemName: "plus")
+                        })
         }
     }
 }
 
 struct MasterView: View {
-    var foods: ViewModel
+    @ObservedObject var foods: ViewModel
     var body: some View {
         List{
             ForEach(foods.model, id: \.FoodName) {food in

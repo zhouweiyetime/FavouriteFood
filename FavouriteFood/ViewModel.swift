@@ -7,6 +7,18 @@
 
 import Foundation
 
-class ViewModel {
-    var model = [Food]()
+class ViewModel: ObservableObject {
+    @Published var model = [Food]()
+    
+    func addElement() {
+        _ = model.count + 1
+        let foods = Food(FoodImage: chipsImage, FoodName: "<New>", FoodDescription: "Enter Description", FoodStory: "Enter Story", FoodRecipe: "Enter Recipe", FoodIngredient: " ")
+        model.append(foods)
+        
+    }
+    
+    func remove(at indices: IndexSet) {
+        model.remove(atOffsets: indices)
+    }
+    
 }
