@@ -10,6 +10,7 @@ import SwiftUI
 struct DetailView: View {
     @State var food: Food
     var body: some View {
+        NavigationView {
         VStack(alignment: .leading) {
             food.FoodImage
                 .resizable()
@@ -39,7 +40,11 @@ struct DetailView: View {
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .scaledToFit()
             Text(food.FoodIngredient)
-            }
-        }
-    }
+                 }
+              }
+         }
+        .toolbar{
+            EditButton()
+      }
+   }
 }
