@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// create Edit Button and Add Button
 struct ContentView: View {
     @ObservedObject var foods: ViewModel
      var body: some View {
@@ -14,7 +15,7 @@ struct ContentView: View {
             MasterView(foods: foods)
                 .navigationBarTitle(Text("Favourite Food"))
                 .navigationBarItems(leading:
-                    EditButton(),trailing:
+                        EditButton(),trailing:
                         Button(action: {
                             withAnimation {
                             foods.addElement()
@@ -47,10 +48,15 @@ struct MasterView: View {
                             .scaledToFit()
                         }})
             }
+            .onDelete(perform: deleteItems)
         }
     }
+// create delete item function
+    func deleteItems(at offsets: IndexSet) {
+        foods.remove(at: offsets)
+    }
 }
-        
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         return ContentView(foods: ViewModel())
