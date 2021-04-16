@@ -49,12 +49,19 @@ struct MasterView: View {
                         }})
             }
             .onDelete(perform: deleteItems)
+            .onMove(perform: moveItems)
         }
     }
 // create delete item function
     func deleteItems(at offsets: IndexSet) {
         foods.remove(at: offsets)
     }
+    
+// create move item function
+    func moveItems(source: IndexSet, destination: Int) {
+        foods.model.move(fromOffsets: source, toOffset: destination)
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
