@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 //chips info
-let chipsImage = Image("chips")
+let chipsImage = "https://www.thespruceeats.com/thmb/fFY-wqOwGKO16rTH8YwdnSUWoNQ=/2667x2667/smart/filters:no_upscale()/best-twice-cooked-chip-recipe-434891-hero-01-5d90eb5142b042e1b71e2c3bcce9c5c9.jpg"
 
 let chipsDescription = "Chips with some sauce."
 
@@ -22,7 +22,7 @@ let chipsIngredient = "750 g Desirée potato (about 3 medium large)" +
                       "\nsome drizzling sea salt and freshly ground black pepper"
 
 //cake info
-let cakeImage = Image("cake")
+let cakeImage = "https://livforcake.com/wp-content/uploads/2017/07/black-forest-cake-thumb.jpg"
 
 let cakeDescription = "Chocolate Cake"
 
@@ -43,7 +43,7 @@ let cakeIngredient = "150ml sunflower oil, plus extra for the tin" +
                      "\n150 ml semi-skimmed milk"
 
 //steak info
-let steakImage = Image("steak")
+let steakImage = "https://i.ytimg.com/vi/nsw0Px-Pho8/maxresdefault.jpg"
 
 let steakDescription = "steak with garlic butter"
 
@@ -58,7 +58,7 @@ let steakIngredient = "1 rib-eye steaks, each about 200g and 2cm thick" +
                       "\n1 garlic clove, left whole but bashed once"
 
 //chickenNuggets info
-let chickenNuggetsImage = Image("chickenNuggets")
+let chickenNuggetsImage = "https://recipefairy.com/wp-content/uploads/2020/05/mcdonalds-chicken-nuggets-recipe.jpg"
 let chickenNuggetsDescription = "chickenNuggets with ketchup"
 let chickenNuggetsStory = "When I tried chickenNugget for the forth time, it became one of my favourite foods"
 let chickenNuggetsRecipe = "1. Cut the chicken thighs into nugget sized pieces then put in a bowl with the yogurt and curry paste. Cover and leave in the fridge to marinate for 2 hrs." +
@@ -70,7 +70,7 @@ let chickenNuggetsIngredient = "500 g chicken thighs" +
                                "\n100 g breadcrumbs"
 
 //hamberger info
-let hambergerImage = Image("hamberger")
+let hambergerImage = "https://i.pinimg.com/originals/b7/79/cc/b779cc239e0c3d07aa948380f8a020bc.jpg"
 
 let hambergerDescription = "American hamberger"
 

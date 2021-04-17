@@ -10,20 +10,23 @@ import SwiftUI
 struct MasterView: View {
     //set instance for ViewModel
     @ObservedObject var food: ViewModel
+    let foodviewmodel = FoodViewModel()
     @Environment(\.editMode) var editMode
+    
+    
     var body: some View {
         List{
-            ForEach(food.model, id: \.FoodName) {food in
+            ForEach(food.model, id: \.FoodName) {foods in
                 NavigationLink(
-                    destination: DetailView(foods: food).frame(width: UIScreen.main.bounds.width - 30),
+                    destination: DetailView(foods: foods).frame(width: UIScreen.main.bounds.width - 30),
                     label: {
-                        food.FoodImage.resizable().frame(width: 80, height: 80)
-                        VStack(alignment: .leading) {                        Text("\(editMode?.wrappedValue.isEditing ?? false ? "Edit " : "") \(food.FoodName)")
+                        foodviewmodel.download(foods.FoodImage).resizable().frame(width: 80, height: 80)
+                        VStack(alignment: .leading) {                        Text("\(editMode?.wrappedValue.isEditing ?? false ? "Edit " : "") \(foods.FoodName)")
                             .font(.headline)
                             .fontWeight(.bold)
                             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                             .scaledToFit()
-                            Text("\(editMode?.wrappedValue.isEditing ?? false ? "Edit " : "") \(food.FoodDescription)")
+                            Text("\(editMode?.wrappedValue.isEditing ?? false ? "Edit " : "") \(foods.FoodDescription)")
                             .font(.footnote)
                             .fontWeight(.thin)
                             .scaledToFit()

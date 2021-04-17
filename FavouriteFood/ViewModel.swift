@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 // class to define an array which is a list of food.
 class ViewModel: ObservableObject, Identifiable {
     //an array of Food

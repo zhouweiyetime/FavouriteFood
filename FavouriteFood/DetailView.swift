@@ -9,10 +9,12 @@ import SwiftUI
 
 struct DetailView: View {
     @ObservedObject var foods: Food
+    let foodviewmodel = FoodViewModel()
+    
     var body: some View {
         NavigationView {
-        VStack(alignment: .leading) {
-            foods.FoodImage
+            VStack(spacing: 1.0) {
+            foodviewmodel.download(foods.FoodImage)
                 .resizable()
                 .scaledToFit()
 List {
@@ -31,7 +33,8 @@ List {
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .scaledToFit()
         TextField("Enter food recipe", text: $foods.FoodRecipe)
-                
+        TextField("Enter image URL.", text: $foods.FoodImage)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
         Text("INGREDIENT")
             .font(.largeTitle)
             .fontWeight(.bold)
@@ -44,5 +47,6 @@ List {
         .toolbar{
             EditButton()
       }
+        .frame(width: nil)
    }
 }
