@@ -8,38 +8,36 @@
 import SwiftUI
 
 struct DetailView: View {
-    @State var food: Food
+    @ObservedObject var foods: Food
     var body: some View {
         NavigationView {
         VStack(alignment: .leading) {
-            food.FoodImage
+            foods.FoodImage
                 .resizable()
                 .scaledToFit()
-            List {
-        Text(food.FoodName)
+List {
+        TextField("Enter food name", text: $foods.FoodName)
             .font(.largeTitle)
-            .fontWeight(.bold)
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .scaledToFit()
-        Text(food.FoodDescription)
+        TextField("Enter food description", text: $foods.FoodDescription)
                 .font(.body)
-                .fontWeight(.thin)
                 .scaledToFit()
-        Text(food.FoodStory)
+        TextField("Enter food story", text: $foods.FoodStory)
                 .padding([.top, .bottom, .trailing])
         Text("RECIPE")
             .font(.largeTitle)
             .fontWeight(.bold)
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .scaledToFit()
-            Text(food.FoodRecipe)
+        TextField("Enter food recipe", text: $foods.FoodRecipe)
                 
         Text("INGREDIENT")
             .font(.largeTitle)
             .fontWeight(.bold)
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .scaledToFit()
-            Text(food.FoodIngredient)
+                TextField("Enter food Ingredient", text: $foods.FoodIngredient)
                  }
               }
          }

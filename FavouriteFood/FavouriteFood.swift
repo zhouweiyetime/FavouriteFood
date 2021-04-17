@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import Foundation
 
-class Food{
-    var FoodImage: Image
-    var FoodName: String
-    var FoodDescription: String
-    var FoodStory: String
-    var FoodRecipe: String
-    var FoodIngredient: String
+class Food: ObservableObject, Identifiable {
+    @Published var FoodImage: Image
+    @Published var FoodName: String
+    @Published var FoodDescription: String
+    @Published var FoodStory: String
+    @Published var FoodRecipe: String
+    @Published var FoodIngredient: String
     
     init(FoodImage:Image, FoodName:String, FoodDescription:String, FoodStory: String, FoodRecipe: String, FoodIngredient: String) {
         self.FoodImage = FoodImage

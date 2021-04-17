@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A86FE585262ACBAF0034AB8D /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FE584262ACBAF0034AB8D /* FoodViewModel.swift */; };
+		A86FE58A262ACDAC0034AB8D /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FE589262ACDAC0034AB8D /* MasterView.swift */; };
 		A89E50CD260E0FCE0005D016 /* FavouriteFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E50CC260E0FCE0005D016 /* FavouriteFoodApp.swift */; };
 		A89E50CF260E0FCE0005D016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E50CE260E0FCE0005D016 /* ContentView.swift */; };
 		A89E50D1260E0FCE0005D016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89E50D0260E0FCE0005D016 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A86FE584262ACBAF0034AB8D /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		A86FE589262ACDAC0034AB8D /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		A89E50C9260E0FCE0005D016 /* FavouriteFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouriteFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89E50CC260E0FCE0005D016 /* FavouriteFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFoodApp.swift; sourceTree = "<group>"; };
 		A89E50CE260E0FCE0005D016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,8 +109,10 @@
 			children = (
 				A89E50CC260E0FCE0005D016 /* FavouriteFoodApp.swift */,
 				A89E50CE260E0FCE0005D016 /* ContentView.swift */,
+				A86FE589262ACDAC0034AB8D /* MasterView.swift */,
 				A8E6CB79261990D2001E9AE9 /* FoodText.swift */,
 				A8AC42FF2614B36100486962 /* ViewModel.swift */,
+				A86FE584262ACBAF0034AB8D /* FoodViewModel.swift */,
 				A89E50FA260E10BC0005D016 /* FavouriteFood.swift */,
 				A8AC42FA2614B0E500486962 /* DetailView.swift */,
 				A89E50D0260E0FCE0005D016 /* Assets.xcassets */,
@@ -273,10 +279,12 @@
 			files = (
 				A8AC43002614B36100486962 /* ViewModel.swift in Sources */,
 				A89E50FB260E10BC0005D016 /* FavouriteFood.swift in Sources */,
+				A86FE58A262ACDAC0034AB8D /* MasterView.swift in Sources */,
 				A8E6CB7A261990D2001E9AE9 /* FoodText.swift in Sources */,
 				A8AC42FB2614B0E500486962 /* DetailView.swift in Sources */,
 				A89E50CF260E0FCE0005D016 /* ContentView.swift in Sources */,
 				A89E50CD260E0FCE0005D016 /* FavouriteFoodApp.swift in Sources */,
+				A86FE585262ACBAF0034AB8D /* FoodViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
