@@ -15,7 +15,7 @@ class ViewModel: ObservableObject, Identifiable {
     //function to add a food in viewModel
     func addElement() {
         _ = model.count + 1
-        let foods = Food(FoodImage: chipsImage, FoodName: "<New>", FoodDescription: "Enter Description", FoodStory: "Enter Story", FoodRecipe: "Enter Recipe", FoodIngredient: " ")
+        let foods = Food(FoodImage: "", FoodName: "<New>", FoodDescription: "Enter Description", FoodStory: "Enter Story", FoodRecipe: "Enter Recipe", FoodIngredient: " ")
         model.append(foods)
         
     }

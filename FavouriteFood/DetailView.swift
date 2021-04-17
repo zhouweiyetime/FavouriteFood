@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct DetailView: View {
+    //set instance for each Food
     @ObservedObject var foods: Food
     let foodviewmodel = FoodViewModel()
     
     var body: some View {
-        NavigationView {
             VStack(spacing: 1.0) {
             foodviewmodel.download(foods.FoodImage)
                 .resizable()
@@ -44,9 +44,8 @@ List {
                  }
               }
          }
-        .toolbar{
-            EditButton()
+
       }
-        .frame(width: nil)
-   }
-}
+    
+
+
